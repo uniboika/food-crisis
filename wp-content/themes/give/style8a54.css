@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+Theme Name: Give
+Theme URI: https://give.cmsmasters.net/
+Author: cmsmasters
+Author URI: https://cmsmasters.net/
+Description: Give WordPress Elementor theme is created for non-profit websites, like governmental social program websites, NGO, Donation and fundraising websites, animal-saving fundraisers, environment protection companies etc. Give is a charity theme, as well as a non profit theme for any social organizations, funds and donation campaigns. The theme comes with Give WP plugin for donations functionality that lets you raise funds for your environmental projects and run several fundraising campaigns at a time, track and show progress for each.
+Version: 1.2.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License:
+License URI:
+Text Domain: give
+Domain Path: /theme-config/languages
+Copyright: cmsmasters 2024 / All Rights Reserved
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+
+.sticky,
+.bypostauthor,
+.screen-reader-text {
+  outline: none;
+}
