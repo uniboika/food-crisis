@@ -1,0 +1,306 @@
+/* ======================= */
+/* SECTION: Layout Spacing */
+						.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-question:not(.forminator-last) {
+	margin-bottom: 50px;
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-question:not(.forminator-last):after {
+	margin-top: 50px;
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-legend,
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-image,
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-question--description {
+	margin: 0 0 25px;
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-answer {
+	margin-top: 25px;
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-question--result {
+	margin: 25px 0 0;
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-quiz--result,
+.forminator-ui.forminator-quiz#forminator-module-34244.forminator-quiz--list[data-spacing=custom] .forminator-quiz--social {
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+#forminator-quiz-leads-34244.forminator-ui.forminator-quiz--list[data-spacing=custom] {
+	margin-bottom: 50px;
+}			
+/* =============== */
+/* SECTION: Global */
+	.forminator-ui.forminator-quiz#forminator-module-34244 {
+		width: 100%;
+																																													background-color: #ffffff;
+										border-color: #dfdfdf;
+						}
+/* ELEMENT: Quiz error */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-response-message.forminator-error {
+	background-color: #F9E4E8;
+	box-shadow: inset 4px 0 0 0 #E51919;
+	-moz-box-shadow: inset 4px 0 0 0 #E51919;
+	-webkit-box-shadow: inset 4px 0 0 0 #E51919;
+	color: #333333;
+	margin: 0 0 20px;
+    padding: 15px 20px 15px 22px;
+    border-radius: 0;
+    text-align: left;
+}
+/* =============== */
+/* SECTION: Header */
+/* ELEMENT: Quiz Title */
+	.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--title {
+									color: #5a595a;
+										font-size: 36px;
+			font-weight: 700;
+			}
+/* ELEMENT: Quiz Description */
+	.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--description,
+	.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--description p {
+									color: #3e3e3e;
+										font-size: 20px;
+			font-weight: 400;
+			}
+
+/* ================ */
+/* SECTION: Content */
+/* ELEMENT: Quiz Question (Border color) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-question:after {
+	background-color: rgba(0,0,0,0.12);
+}
+/* ELEMENT: Quiz Question (Legend) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-question .forminator-legend {
+						color: #333356;
+						font-size: 24px;
+		font-weight: 700;
+	}
+/* Page indicator */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-page-indicator {
+	display: flex;
+    justify-content: flex-end;
+			color: #888888;
+				font-size: 13px;
+					font-family: Roboto;
+				font-weight: 400;
+	}/* Navigation Button */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-quiz-start,
+#forminator-quiz-leads-34244.forminator-ui button.forminator-button.forminator-quiz-start {
+						background-color: #17A8E3;
+							color: #FFFFFF;
+						font-size: 14px;
+		font-weight: 500;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-quiz-start:hover,
+#forminator-quiz-leads-34244.forminator-ui button.forminator-button.forminator-quiz-start:hover {
+						background-color: #008FCA;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-quiz-start:focus,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-quiz-start:active,
+#forminator-quiz-leads-34244.forminator-ui button.forminator-button.forminator-quiz-start:focus,
+#forminator-quiz-leads-34244.forminator-ui button.forminator-button.forminator-quiz-start:active {
+						background-color: #008FCA;
+							color: #FFFFFF;
+			}
+/* ELEMENT: Quiz Question Description */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-question--description,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-question--description p {
+						color: #8C8C8C;
+						font-size: 20px;
+		font-weight: 400;
+	}/* ELEMENT: Quiz Question (Result) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-question--result {
+						color: #5d5d66;
+						font-size: 13px;
+		font-weight: 700;
+	}
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-result--retake {
+						background-color: #222222;
+							color: #FFFFFF;
+						font-size: 14px;
+		font-weight: 400;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-result--retake:hover {
+						background-color: #222222;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-result--retake:focus,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button.forminator-result--retake:active {
+						background-color: #222222;
+							color: #FFFFFF;
+			}/* ELEMENT: Quiz Answers (Text) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer .forminator-answer--name {
+						color: #5d5d66;
+						font-size: 14px;
+		font-weight: 500;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer input:checked + .forminator-answer--design .forminator-answer--name {
+						color: #333333;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_correct input:checked + .forminator-answer--design .forminator-answer--name {
+						color: #333133;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_incorrect input:checked + .forminator-answer--design .forminator-answer--name {
+						color: #DA0000;
+			}
+	/* ELEMENT: Quiz Answers (Container) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer .forminator-answer--design {
+						border-color: rgba(225,223,219,0.5);
+							background-color: #ffffff;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer .forminator-answer--design:hover,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer .forminator-answer--design:focus {
+						border-color: #f3eae2;
+							background-color: #f3eae2;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer input:checked + .forminator-answer--design {
+						border-color: #f3eae2;
+							background-color: #f3eae2;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_correct input:checked + .forminator-answer--design {
+						border-color: #f3eae2;
+							background-color: #f3eae2;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_incorrect input:checked + .forminator-answer--design {
+						border-color: #DA0000;
+							background-color: #FDF2F2;
+			}
+	/* ELEMENT: Quiz Answers (Checkbox) */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer .forminator-answer--status {
+						border-color: #e1dfdb;
+							background-color: #FFFFFF;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer input:checked + .forminator-answer--design .forminator-answer--status {
+						border-color: #8e8e8e;
+							background-color: #8e8e8e;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_correct input:checked + .forminator-answer--design .forminator-answer--status {
+						border-color: #006450;
+							background-color: #006450;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-answer.forminator-is_incorrect input:checked + .forminator-answer--design .forminator-answer--status {
+						border-color: #DA0000;
+							background-color: #DA0000;
+							color: #FFFFFF;
+			}
+
+/* =============== */
+/* SECTION: Footer */
+/* Quiz Result Container */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result {
+	border-top-color: rgba(0,0,0,0.12);
+}
+/* Submit Button */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button {
+						background-color: #d78bcd;
+							color: #FFFFFF;
+						font-size: 14px;
+		font-weight: 500;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button:hover {
+						background-color: #008FCA;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button:focus,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-button:active {
+						background-color: #008FCA;
+							color: #FFFFFF;
+			}
+/* Navigation Button */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-pagination-footer .forminator-button:not(.forminator-button-submit) {
+						background-color: #1ABCA1;
+							color: #FFFFFF;
+						font-size: 14px;
+		font-weight: 500;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-pagination-footer .forminator-button:hover:not(.forminator-button-submit) {
+						background-color: #159C85;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-pagination-footer .forminator-button:focus:not(.forminator-button-submit),
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-pagination-footer .forminator-button:active:not(.forminator-button-submit) {
+						background-color: #159C85;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-pagination-footer .forminator-button.forminator-disabled {
+						background-color: #E6E6E6;
+							color: #888888;
+			}
+/* Back to questions Button */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-result--view-answers {
+						background-color: #1ABCA1;
+							color: #FFFFFF;
+						font-size: 14px;
+		font-weight: 400;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-result--view-answers:hover {
+						background-color: #159C85;
+							color: #FFFFFF;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-result--view-answers:focus,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-result--view-answers:active {
+						background-color: #159C85;
+							color: #FFFFFF;
+			}
+/* Summary */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--summary,
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--summary p {
+						color: #5a595a;
+						font-size: 40px;
+		font-weight: 400;
+	}
+/* Social Sharing */
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social {
+	border-top-color: rgba(0,0,0,0.12);
+}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social .forminator-social--text {
+						color: #4D4D4D;
+						font-size: 20px;
+		font-weight: 400;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social .forminator-social--icon {
+			font-size: 36px;
+	}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social .forminator-social--icon .forminator-icon-social-facebook {
+						color: #0084BF !important;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social .forminator-social--icon .forminator-icon-social-twitter {
+						color: #1DA1F2 !important;
+			}
+
+.forminator-ui.forminator-quiz#forminator-module-34244 .forminator-quiz--result .forminator-quiz--social .forminator-social--icon .forminator-icon-social-linkedin {
+						color: #0084BF !important;
+			}
+/* ============= */
+/* Custom Styles */
