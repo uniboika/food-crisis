@@ -1,0 +1,404 @@
+/* Custom Logo and Header Fixes */
+
+/* Fix logo sizing - make it bigger */
+.elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img {
+    width: auto !important;
+    height: 100px !important;
+    max-height: 100px !important;
+}
+
+/* Remove extra space in header */
+.elementor-150 .elementor-element.elementor-element-13a808ac > .elementor-container {
+    min-height: 120px !important;
+}
+
+/* Adjust header padding to remove top space */
+.elementor-150 .elementor-element.elementor-element-13a808ac {
+    margin-top: 0px !important;
+    margin-bottom: -120px !important;
+    padding: 0px 10px 0px 10px !important;
+}
+
+/* Ensure logo container has proper vertical alignment */
+.elementor-150 .elementor-element.elementor-element-519eb6b3 > .elementor-element-populated {
+    padding: 10px 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Make logo image responsive */
+.elementor-widget-cmsmasters-site-logo__img {
+    object-fit: contain;
+}
+
+/* Force new brand colors in CSS variables */
+:root {
+    --e-global-color-primary: #3753a4 !important;
+    --e-global-color-accent: #a1cd43 !important;
+}
+
+/* HOME PAGE SPECIFIC FIXES */
+
+/* Section background for "Join Our Mission" - make it BLUE */
+.elementor-36155 .elementor-element.elementor-element-05eb8d6 {
+    background-color: #3753a4 !important;
+}
+
+/* Section with curved text "giving is the best form of action" - make it BLUE */
+.elementor-36155 .elementor-element.elementor-element-79fc1c5 {
+    background-color: #3753a4 !important;
+}
+
+/* "Join Our Mission" heading - make it GREEN */
+.elementor-36155 .elementor-element.elementor-element-347637b .elementor-heading-title {
+    color: #a1cd43 !important;
+}
+
+/* "View all Cases" button - make it GREEN */
+.elementor-36155 .elementor-element.elementor-element-f44049a .elementor-widget-cmsmasters-button__button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* "View all Cases" button hover - blue */
+.elementor-36155 .elementor-element.elementor-element-f44049a .elementor-widget-cmsmasters-button__button:hover,
+.elementor-36155 .elementor-element.elementor-element-f44049a .elementor-widget-cmsmasters-button__button:focus {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* "Ways to Help" button - make it DARKER BLUE for better contrast */
+.elementor-36155 .elementor-element.elementor-element-a69133b .elementor-widget-cmsmasters-button__button {
+    background-color: #2A3F7A !important;
+    color: #ffffff !important;
+    border-color: #2A3F7A !important;
+}
+
+/* "Ways to Help" button hover - green */
+.elementor-36155 .elementor-element.elementor-element-a69133b .elementor-widget-cmsmasters-button__button:hover,
+.elementor-36155 .elementor-element.elementor-element-a69133b .elementor-widget-cmsmasters-button__button:focus {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Donate button - green background with white text */
+.elementor-150 .elementor-element.elementor-element-eae6697 .elementor-button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Donate button hover - blue background with white text */
+.elementor-150 .elementor-element.elementor-element-eae6697 .elementor-button:hover {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* Keep nav links WHITE (not blue) */
+.elementor-150 .elementor-element.elementor-element-46f7364 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a {
+    color: #ffffff !important;
+}
+
+/* Nav links hover - green color */
+.elementor-150 .elementor-element.elementor-element-46f7364 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a:hover,
+.elementor-150 .elementor-element.elementor-element-46f7364 .elementor-widget-cmsmasters-nav-menu__main > ul > li:hover > a {
+    color: #a1cd43 !important;
+}
+
+/* Active nav link - green color */
+.elementor-150 .elementor-element.elementor-element-46f7364 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a.elementor-widget-cmsmasters-nav-menu__item-active {
+    color: #a1cd43 !important;
+}
+
+/* Content area links - blue */
+.elementor-widget-text-editor a,
+.elementor-widget-theme-post-content a,
+.give-wrap a {
+    color: #3753a4 !important;
+}
+
+/* Content area links hover - green */
+.elementor-widget-text-editor a:hover,
+.elementor-widget-theme-post-content a:hover,
+.give-wrap a:hover {
+    color: #a1cd43 !important;
+}
+
+/* General buttons - blue background */
+.elementor-button:not(.elementor-150 .elementor-element-eae6697 .elementor-button),
+.give-btn,
+button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-button) {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* General buttons hover - green background */
+.elementor-button:not(.elementor-150 .elementor-element-eae6697 .elementor-button):hover,
+.give-btn:hover,
+button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-button):hover {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Counter section - flip colors: BLUE background with GREEN counters */
+.elementor-36155 .elementor-element.elementor-element-7a52a5f {
+    background-color: #3753a4 !important;
+}
+
+/* Counter numbers - make them GREEN */
+.elementor-36155 .elementor-element.elementor-element-f9d6cac .elementor-counter-number,
+.elementor-36155 .elementor-element.elementor-element-b9c1d47 .elementor-counter-number,
+.elementor-36155 .elementor-element.elementor-element-26ad9e1 .elementor-counter-number,
+.elementor-36155 .elementor-element.elementor-element-e767cbf .elementor-counter-number {
+    color: #a1cd43 !important;
+}
+
+/* Counter number prefix and suffix - make them GREEN */
+.elementor-36155 .elementor-element.elementor-element-f9d6cac .elementor-counter-number-prefix,
+.elementor-36155 .elementor-element.elementor-element-f9d6cac .elementor-counter-number-suffix,
+.elementor-36155 .elementor-element.elementor-element-b9c1d47 .elementor-counter-number-prefix,
+.elementor-36155 .elementor-element.elementor-element-b9c1d47 .elementor-counter-number-suffix,
+.elementor-36155 .elementor-element.elementor-element-26ad9e1 .elementor-counter-number-prefix,
+.elementor-36155 .elementor-element.elementor-element-26ad9e1 .elementor-counter-number-suffix,
+.elementor-36155 .elementor-element.elementor-element-e767cbf .elementor-counter-number-prefix,
+.elementor-36155 .elementor-element.elementor-element-e767cbf .elementor-counter-number-suffix {
+    color: #a1cd43 !important;
+}
+
+/* Counter titles - keep them WHITE for contrast on blue background */
+.elementor-36155 .elementor-element.elementor-element-f9d6cac .elementor-counter-title,
+.elementor-36155 .elementor-element.elementor-element-b9c1d47 .elementor-counter-title,
+.elementor-36155 .elementor-element.elementor-element-26ad9e1 .elementor-counter-title,
+.elementor-36155 .elementor-element.elementor-element-e767cbf .elementor-counter-title {
+    color: #ffffff !important;
+}
+
+
+/* ========================================
+   ABOUT US PAGE SPECIFIC FIXES (Page ID: 29998)
+   ======================================== */
+
+/* "Take Action" button in hero - GREEN background */
+.elementor-29998 .elementor-element.elementor-element-53fe55e .elementor-widget-cmsmasters-button__button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* "Take Action" button hover - BLUE */
+.elementor-29998 .elementor-element.elementor-element-53fe55e .elementor-widget-cmsmasters-button__button:hover,
+.elementor-29998 .elementor-element.elementor-element-53fe55e .elementor-widget-cmsmasters-button__button:focus {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* "View More" button - GREEN background */
+.elementor-29998 .elementor-element.elementor-element-dcb31d8 .elementor-widget-cmsmasters-button__button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* "View More" button hover - BLUE */
+.elementor-29998 .elementor-element.elementor-element-dcb31d8 .elementor-widget-cmsmasters-button__button:hover,
+.elementor-29998 .elementor-element.elementor-element-dcb31d8 .elementor-widget-cmsmasters-button__button:focus {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* "Our Goals" section background - BLUE */
+.elementor-29998 .elementor-element.elementor-element-345c43d {
+    background-color: #3753a4 !important;
+}
+
+/* Make text in "Our Goals" section WHITE for contrast */
+.elementor-29998 .elementor-element.elementor-element-345c43d h2,
+.elementor-29998 .elementor-element.elementor-element-345c43d p,
+.elementor-29998 .elementor-element.elementor-element-345c43d .elementor-heading-title {
+    color: #ffffff !important;
+}
+
+/* Toggle titles in "Our Goals" section - WHITE */
+.elementor-29998 .elementor-element.elementor-element-09205e7 .elementor-widget-cmsmasters-toggles__title-text {
+    color: #ffffff !important;
+}
+
+/* "Its Time to Take Action" section background - BLUE */
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 {
+    background-color: #3753a4 !important;
+}
+
+/* Counter section in About Us - make text WHITE on blue background */
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-counter-title,
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-counter-number,
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-counter-number-prefix,
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-counter-number-suffix {
+    color: #ffffff !important;
+}
+
+/* Make headings in counter section WHITE */
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 h2,
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-heading-title {
+    color: #ffffff !important;
+}
+
+/* Buttons in "Its Time to Take Action" section - GREEN */
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-widget-cmsmasters-button__button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Buttons hover - BLUE */
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-widget-cmsmasters-button__button:hover,
+.elementor-29998 .elementor-element.elementor-element-9e5fb84 .elementor-widget-cmsmasters-button__button:focus {
+    background-color: #2A3F7A !important;
+    color: #ffffff !important;
+    border-color: #2A3F7A !important;
+}
+
+/* "About Us" label with yellow background - change to BLUE background with WHITE text */
+.elementor-29998 .elementor-element.elementor-element-54c91ac .elementor-heading-title {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    padding: 5px 15px !important;
+    display: inline-block !important;
+}
+
+/* Fix any remaining yellow backgrounds in About Us page */
+.elementor-29998 [style*="background-color: #FFD44A"],
+.elementor-29998 [style*="background-color: #ED8836"] {
+    background-color: #3753a4 !important;
+}
+
+/* Remove yellow background from "About Us" widget container */
+.elementor-29998 .elementor-element.elementor-element-54c91ac {
+    background-color: transparent !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-54c91ac .elementor-widget-container {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+/* "About Us" label text - BLUE background with WHITE text (remove yellow, make fully blue) */
+.elementor-29998 .elementor-element.elementor-element-54c91ac .elementor-heading-title {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    padding: 8px 20px !important;
+    display: inline-block !important;
+    border-radius: 4px !important;
+}
+
+/* "our mission" label (element-2882b5a) - GREEN background with WHITE text */
+.elementor-29998 .elementor-element.elementor-element-2882b5a .elementor-heading-title {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    padding: 8px 20px !important;
+    display: inline-block !important;
+    border-radius: 4px !important;
+}
+
+/* FAQ toggle plus/minus icons - GREEN background circles */
+.elementor-29998 .elementor-element.elementor-element-09205e7 .elementor-widget-cmsmasters-toggles__trigger {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* FAQ toggle icons color */
+.elementor-29998 .elementor-element.elementor-element-09205e7 .elementor-widget-cmsmasters-toggles__trigger i {
+    color: #ffffff !important;
+}
+
+/* Counter section - keep WHITE background, change text to BLUE except for titles */
+.elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-number,
+.elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-number-prefix,
+.elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-number-suffix {
+    color: #3753a4 !important;
+}
+
+/* Counter titles like "Goes To The Cause" - keep WHITE */
+.elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-title {
+    color: #ffffff !important;
+}
+
+
+/* ========================================
+   HEADER 87 FIXES (Used in About Us and other pages)
+   ======================================== */
+
+/* Fix header container spacing - remove top space */
+.elementor-87 .elementor-element.elementor-element-6d76cba4 > .elementor-container {
+    min-height: 120px !important;
+}
+
+/* Adjust header section padding to remove top space */
+.elementor-87 .elementor-element.elementor-element-6d76cba4 {
+    margin-top: 0px !important;
+    margin-bottom: -120px !important;
+    padding: 0px 10px 0px 10px !important;
+}
+
+/* Ensure logo container has proper vertical alignment */
+.elementor-87 .elementor-element.elementor-element-58bd304a > .elementor-element-populated {
+    padding: 10px 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Fix logo sizing for header 87 */
+.elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img {
+    width: auto !important;
+    height: 100px !important;
+    max-height: 100px !important;
+}
+
+/* Hide search button in header 87 */
+.elementor-87 .elementor-element.elementor-element-503b70bd {
+    display: none !important;
+}
+
+/* Nav links - WHITE text */
+.elementor-87 .elementor-element.elementor-element-13a78fd8 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a {
+    color: #ffffff !important;
+}
+
+/* Nav links hover - GREEN */
+.elementor-87 .elementor-element.elementor-element-13a78fd8 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a:hover,
+.elementor-87 .elementor-element.elementor-element-13a78fd8 .elementor-widget-cmsmasters-nav-menu__main > ul > li:hover > a {
+    color: #a1cd43 !important;
+}
+
+/* Active nav link - GREEN */
+.elementor-87 .elementor-element.elementor-element-13a78fd8 .elementor-widget-cmsmasters-nav-menu__main > ul > li > a.elementor-widget-cmsmasters-nav-menu__item-active {
+    color: #a1cd43 !important;
+}
+
+/* Donate button in header 87 - GREEN background */
+.elementor-87 .elementor-element.elementor-element-3afd9ee .elementor-button {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Donate button hover - BLUE */
+.elementor-87 .elementor-element.elementor-element-3afd9ee .elementor-button:hover {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
