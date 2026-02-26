@@ -1,0 +1,59 @@
+INSTRUCTIONS TO FIX CAMPAIGN PAGE NAVIGATION LINKS
+==================================================
+
+Problem: Campaign pages are 2 levels deep (/campaigns/page-name/) so they need ../../ to reach root, not ../
+
+Solution: Use your code editor's "Find & Replace in Files" feature
+
+STEPS:
+1. Open your code editor (VS Code, Sublime, etc.)
+2. Use "Find in Files" or "Find & Replace in Files" (usually Ctrl+Shift+F or Cmd+Shift+F)
+3. Set the search scope to: food-crisis/campaigns/
+4. Make sure "Use Regular Expression" is DISABLED
+5. Do the following replacements ONE AT A TIME:
+
+FIND & REPLACE LIST (do these in order):
+----------------------------------------
+
+Find: href="../index.html"
+Replace: href="../../index.html"
+
+Find: href="../about-us/
+Replace: href="../../about-us/
+
+Find: href="../contacts/
+Replace: href="../../contacts/
+
+Find: href="../donate-now/
+Replace: href="../../donate-now/
+
+Find: href="../blog-page/
+Replace: href="../../blog-page/
+
+Find: href="../image-credits/
+Replace: href="../../image-credits/
+
+Find: href="../shop/
+Replace: href="../../shop/
+
+Find: href="../campaigns-page/
+Replace: href="../../campaigns-page/
+
+IMPORTANT NOTES:
+- Do NOT replace ../campaigns/ (campaign-to-campaign links should stay as ../)
+- Do NOT replace ../../../wp-content/ (these are already correct)
+- The stop-child-hunger page is already fixed, so it's safe to include it in the scope
+
+AFFECTED FILES (12 total):
+- food-crisis/campaigns/join-the-fight-to-end-hunger/index.html
+- food-crisis/campaigns/become-a-regular-food-bank-or-food-pantry-volunteer/index.html
+- food-crisis/campaigns/provide-fresh-meals-to-30000-people-in-florida/index.html
+- food-crisis/campaigns/donate-to-vulnerable-children-in-south-africa/index.html
+- food-crisis/campaigns/stop-child-hunger/index.html (ALREADY FIXED)
+- food-crisis/campaigns/donate-to-feeding-america-or-your-local-food-bank/index.html
+- food-crisis/campaigns/become-a-hunger-relief-leader/index.html
+- food-crisis/campaigns/hunger-will-be-a-thing-of-the-past/index.html
+- food-crisis/campaigns/emergency-care-for-hungry-children/index.html
+- food-crisis/campaigns/donate-to-the-brave/index.html
+- food-crisis/campaigns/east-africa-hunger-relief-fund/index.html
+- food-crisis/campaigns/learn-the-latest-facts-about-hunger/index.html
