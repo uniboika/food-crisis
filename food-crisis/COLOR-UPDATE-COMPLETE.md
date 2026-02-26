@@ -78,7 +78,7 @@
 ## Logo
 
 ✅ Logo size: 100px height
-✅ Logo path: `wp-content/uploads/sites/9/2022/10/Logo.png`
+✅ Logo path: `wp-content/uploads/sites/9/2022/10/Logo.jpeg`
 ✅ Header spacing: Fixed
 
 ## If You Need Adjustments
