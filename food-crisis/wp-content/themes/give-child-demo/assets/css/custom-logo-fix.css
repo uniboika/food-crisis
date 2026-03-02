@@ -685,3 +685,40 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     border-color: #3753a4 !important;
 }
 
+
+
+/* ========================================
+   CAMPAIGN PAGES BUTTON FIXES
+   ======================================== */
+
+/* "Share Your Thoughts" button - BLUE background with WHITE text */
+.elementor-widget-cmsmasters-button__button {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    border-color: #3753a4 !important;
+}
+
+/* Button hover - GREEN background with WHITE text (not blend) */
+.elementor-widget-cmsmasters-button__button:hover,
+.elementor-widget-cmsmasters-button__button:focus {
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    border-color: #a1cd43 !important;
+}
+
+/* Ensure button text is always visible */
+.elementor-widget-cmsmasters-button__text {
+    color: #ffffff !important;
+}
+
+/* "Take Action" button - make text visible */
+.cmsmasters-button-link .elementor-widget-cmsmasters-button__text {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* Override any conflicting styles */
+.cmsmasters-button-link:hover .elementor-widget-cmsmasters-button__text,
+.cmsmasters-button-link:focus .elementor-widget-cmsmasters-button__text {
+    color: #ffffff !important;
+}
