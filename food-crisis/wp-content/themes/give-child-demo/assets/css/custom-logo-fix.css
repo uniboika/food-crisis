@@ -682,15 +682,7 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
 .elementor-87 .elementor-element.elementor-element-3afd9ee .elementor-button:hover {
     background-color: #3753a4 !important;
     color: #ffffff !important;
-    border-color: #3753a4 !important;
-}
-
-
-
-/* ========================================
-   CAMPAIGN PAGES BUTTON FIXES
-   ======================================== */
-
+    border-color: #3753a4 !important
 /* "Share Your Thoughts" button - BLUE background with WHITE text */
 .elementor-widget-cmsmasters-button__button {
     background-color: #3753a4 !important;
@@ -721,4 +713,33 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
 .cmsmasters-button-link:hover .elementor-widget-cmsmasters-button__text,
 .cmsmasters-button-link:focus .elementor-widget-cmsmasters-button__text {
     color: #ffffff !important;
+}
+
+
+/* ========================================
+   LOGO SIZE FIX - ALL PAGES 40PX
+======================================== */
+
+/* Force all logos (header and footer) to be 40px x 40px */
+.elementor-widget-cmsmasters-site-logo__img {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+/* Campaigns page header logo */
+.elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+/* Footer logos across all pages */
+.elementor-location-footer .elementor-widget-cmsmasters-site-logo__img {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
 }
