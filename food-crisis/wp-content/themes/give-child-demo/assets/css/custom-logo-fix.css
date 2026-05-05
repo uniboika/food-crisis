@@ -743,3 +743,235 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     max-width: 40px !important;
     max-height: 40px !important;
 }
+
+
+/* ========================================
+   CAMPAIGN PAGE - EXTRA SECTIONS STYLING
+   (Key Activities, Beneficiaries, Outcomes, Implementation, M&E, Sustainability)
+   ======================================== */
+
+/* Section spacing to match existing campaign page pattern */
+.elementor-34420 .elementor-element.elementor-element-keyact,
+.elementor-34420 .elementor-element.elementor-element-benout,
+.elementor-34420 .elementor-element.elementor-element-implsust {
+    margin-top: 0% !important;
+    margin-bottom: 11% !important;
+}
+
+/* Key Activities - full width with boxed container */
+.elementor-34420 .elementor-element.elementor-element-keyact > .elementor-container {
+    max-width: 1160px !important;
+}
+
+/* Key Activities heading style */
+.elementor-34420 .elementor-element.elementor-element-keyact .elementor-heading-title {
+    font-size: var(--e-global-typography-h2-font-size) !important;
+    font-weight: var(--e-global-typography-h2-font-weight) !important;
+    color: var(--e-global-color-primary) !important;
+    margin-bottom: 20px !important;
+}
+
+/* Key Activities icon list - match existing icon list styling */
+.elementor-34420 .elementor-element.elementor-element-keyact .cmsmasters-widget-icon-list-items,
+.elementor-34420 .elementor-element.elementor-element-benout .cmsmasters-widget-icon-list-items,
+.elementor-34420 .elementor-element.elementor-element-implsust .cmsmasters-widget-icon-list-items {
+    --cmsmasters-icon-list-items-gap: calc(10px / 2) !important;
+    --cmsmasters-icon-list-item-vertical-align: center !important;
+    --cmsmasters-icon-list-item-icon-size: 28px !important;
+    --cmsmasters-icon-list-item-icon-vertical-align: center !important;
+    --cmsmasters-icon-list-item-icon-color: var(--e-global-color-primary) !important;
+}
+
+/* Target Beneficiaries + Expected Outcomes - two column layout */
+.elementor-34420 .elementor-element.elementor-element-benout > .elementor-container {
+    max-width: 1160px !important;
+}
+
+/* Implementation section headings */
+.elementor-34420 .elementor-element.elementor-element-implsust .elementor-heading-title {
+    font-size: var(--e-global-typography-h2-font-size) !important;
+    font-weight: var(--e-global-typography-h2-font-weight) !important;
+    color: var(--e-global-color-primary) !important;
+    margin-bottom: 15px !important;
+    margin-top: 30px !important;
+}
+
+/* Implementation section text */
+.elementor-34420 .elementor-element.elementor-element-implsust .elementor-widget-text-editor {
+    padding-bottom: 5px !important;
+}
+
+/* Wrap the Key Activities section in a light background to visually separate it */
+.elementor-34420 .elementor-element.elementor-element-keyact {
+    background-color: var(--e-global-color-21a935a) !important;
+    border-radius: 10px !important;
+    padding: 40px 0 !important;
+}
+
+/* Beneficiaries + Outcomes section headings */
+.elementor-34420 .elementor-element.elementor-element-benout .elementor-heading-title {
+    font-size: var(--e-global-typography-h2-font-size) !important;
+    font-weight: var(--e-global-typography-h2-font-weight) !important;
+    color: var(--e-global-color-primary) !important;
+    margin-bottom: 20px !important;
+}
+
+/* Implementation section - light background */
+.elementor-34420 .elementor-element.elementor-element-implsust {
+    background-color: var(--e-global-color-21a935a) !important;
+    border-radius: 10px !important;
+    padding: 40px 0 !important;
+}
+
+
+/* ========================================
+   CAMPAIGN PAGE EXTRA SECTIONS - DIRECT FIX
+   ======================================== */
+
+/* Section spacing */
+[data-id="keyact"],
+[data-id="benout"],
+[data-id="implsust"] {
+    margin-top: 0 !important;
+    margin-bottom: 8% !important;
+}
+
+/* Light blue background on Key Activities and Implementation sections */
+[data-id="keyact"],
+[data-id="implsust"] {
+    background-color: #E8EDF7 !important;
+    border-radius: 10px !important;
+    padding: 40px 20px !important;
+}
+
+/* Section headings - blue color */
+[data-id="keyact"] .elementor-heading-title,
+[data-id="benout"] .elementor-heading-title,
+[data-id="implsust"] .elementor-heading-title {
+    color: #3753a4 !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+}
+
+/* First heading in each section - no top margin */
+[data-id="keyact"] .elementor-widget-heading:first-child .elementor-heading-title,
+[data-id="benout"] .elementor-widget-heading:first-child .elementor-heading-title,
+[data-id="implsust"] .elementor-widget-heading:first-child .elementor-heading-title {
+    margin-top: 0 !important;
+}
+
+/* Icon list items - proper sizing and color */
+[data-id="keyact"] .cmsmasters-widget-icon-list-items,
+[data-id="benout"] .cmsmasters-widget-icon-list-items,
+[data-id="implsust"] .cmsmasters-widget-icon-list-items {
+    --cmsmasters-icon-list-items-gap: 5px !important;
+    --cmsmasters-icon-list-item-icon-size: 24px !important;
+    --cmsmasters-icon-list-item-icon-color: #3753a4 !important;
+}
+
+/* Icon color */
+[data-id="keyact"] .cmsmasters-widget-icon-list-item-icon i,
+[data-id="benout"] .cmsmasters-widget-icon-list-item-icon i,
+[data-id="implsust"] .cmsmasters-widget-icon-list-item-icon i {
+    color: #3753a4 !important;
+}
+
+/* Text color */
+[data-id="keyact"] .cmsmasters-widget-icon-list-item-text,
+[data-id="benout"] .cmsmasters-widget-icon-list-item-text,
+[data-id="implsust"] .cmsmasters-widget-icon-list-item-text {
+    color: #333 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+/* Paragraph text in implementation sections */
+[data-id="implsust"] .elementor-widget-text-editor p {
+    color: #444 !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Divider between sections inside implsust */
+[data-id="implsust"] .elementor-widget-heading + .elementor-widget-text-editor {
+    margin-bottom: 20px !important;
+}
+
+
+/* ========================================
+   SC-CARD FIXES - Bigger headings + full width
+   ======================================== */
+
+/* Match site h2 size and color */
+.sc-card h2.elementor-heading-title {
+    font-size: var(--e-global-typography-h2-font-size, 36px) !important;
+    font-weight: var(--e-global-typography-h2-font-weight, 700) !important;
+    color: var(--e-global-color-primary, #3753a4) !important;
+    line-height: 1.2 !important;
+    margin: 0 0 20px 0 !important;
+    padding-bottom: 14px !important;
+    border-bottom: 3px solid #a1cd43 !important;
+}
+
+/* Full width for the section container */
+[data-id="keyact"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+[data-id="keyact"] > .elementor-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+[data-id="keyact"] .elementor-widget-wrap {
+    padding: 0 !important;
+}
+
+/* Key Activities card - full width, no side margins */
+[data-id="keyact"] .sc-card:first-child {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #E8EDF7 !important;
+    padding: 40px 60px !important;
+}
+
+/* Two-col cards - keep normal width */
+.sc-two-col .sc-card {
+    border-radius: 10px !important;
+    border: 1px solid #E8EDF7 !important;
+    border-top: 4px solid #3753a4 !important;
+    box-shadow: 0 2px 10px rgba(55,83,164,0.08) !important;
+}
+
+
+/* ========================================
+   SC-CARD HEADING SIZE FIX - match site h2
+   ======================================== */
+.sc-card h2.elementor-heading-title {
+    font-size: var(--cmsmasters-h2-font-size, 40px) !important;
+    font-weight: var(--cmsmasters-h2-font-weight, 700) !important;
+    line-height: var(--cmsmasters-h2-line-height, 1.2) !important;
+    color: #3753a4 !important;
+    margin: 0 0 20px 0 !important;
+    padding-bottom: 14px !important;
+    border-bottom: 3px solid #a1cd43 !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+
+/* ========================================
+   JOIN-THE-FIGHT PAGE - Footer padding fix
+   ======================================== */
+.elementor-31687 .elementor-element.elementor-element-f604343 {
+    margin-bottom: 0 !important;
+}
