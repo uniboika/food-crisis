@@ -324,6 +324,17 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     color: #ffffff !important;
 }
 
+/* Our Goals toggles: hover to expand (desktop); click remains on touch */
+@media (hover: hover) and (pointer: fine) {
+    .elementor-29998 .elementor-element.elementor-element-09205e7.our-goals-toggles--hover .elementor-widget-cmsmasters-toggles__title {
+        cursor: default;
+    }
+
+    .elementor-29998 .elementor-element.elementor-element-09205e7.our-goals-toggles--hover .elementor-widget-cmsmasters-toggles__item:hover .elementor-widget-cmsmasters-toggles__title-text {
+        opacity: 0.95;
+    }
+}
+
 /* Counter section - keep WHITE background, change text to BLUE except for titles */
 .elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-number,
 .elementor-29998 .elementor-element.elementor-element-38b57be .elementor-counter-number-prefix,
