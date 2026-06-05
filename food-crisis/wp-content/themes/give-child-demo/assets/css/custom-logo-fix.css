@@ -566,32 +566,197 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     font-weight: 700 !important;
 }
 
-/* Make the team grid scrollable carousel-style; show scrollbar on hover only */
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap {
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    scroll-behavior: smooth !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: none !important;
+/* Vertically center carousel in the right column (matches left text block) */
+.elementor-29998 .elementor-element.elementor-element-b72aa6b > .elementor-widget-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: auto !important;
 }
 
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:hover,
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:focus-within {
-    scrollbar-width: thin !important;
-    scrollbar-color: #a1cd43 #E8EDF7 !important;
+.elementor-29998 .elementor-element.elementor-element-11b8e37,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .elementor-widget-container,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-variable,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .sdhdi-team-carousel,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-track,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-swiper,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-pagination {
+    height: auto !important;
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts {
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-track:hover,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .elementor-widget-container:hover,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-swiper:hover {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Hide cmsmasters blog-similar marker chrome (not used on static team cards) */
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-marker-wrapper,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-marker {
+    display: none !important;
+}
+
+/* Management team — Swiper carousel */
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap.sdhdi-team-carousel {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    overflow: visible !important;
+    position: relative !important;
+    padding: 0 !important;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-track {
+    display: grid !important;
+    grid-template-columns: 40px 1fr 40px !important;
+    column-gap: 8px !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-swiper {
+    overflow: hidden !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    grid-column: 2 !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts.swiper-wrapper {
     display: flex !important;
     flex-wrap: nowrap !important;
-    gap: 40px !important;
-    padding-bottom: 20px !important;
+    gap: 0 !important;
+    padding-bottom: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: flex-start !important;
+    width: 100% !important;
 }
 
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post {
-    flex: 0 0 auto !important;
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .swiper-slide {
+    height: auto !important;
+    align-self: flex-start !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .swiper-slide .cmsmasters-blog__post {
     width: 180px !important;
-    min-width: 180px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* No card/block backgrounds on team members */
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .swiper-slide,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-inner,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-thumbnail,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-thumbnail__inner {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post:hover,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post:focus-within,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__post-inner:hover,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .swiper-slide:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav {
+    position: static !important;
+    z-index: 2 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: #a1cd43 !important;
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease, opacity 0.2s ease !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Swiper adds ::before/::after on nav buttons — full-size blue/green overlays */
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav::before,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav:focus,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav:focus-visible,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav:active {
+    background: #a1cd43 !important;
+    background-color: #a1cd43 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav:hover {
+    background: #3753a4 !important;
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav.swiper-button-disabled {
+    opacity: 0.35 !important;
+    cursor: default !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav--prev {
+    grid-column: 1 !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-nav--next {
+    grid-column: 3 !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-pagination {
+    position: static !important;
+    width: 100% !important;
+    margin: 12px 0 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-pagination .swiper-pagination-bullet {
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.45) !important;
+    opacity: 1 !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .management-team-pagination .swiper-pagination-bullet-active {
+    background: transparent !important;
+    border-color: #a1cd43 !important;
+    opacity: 1 !important;
 }
 
 /* Fix image heights for consistency */
@@ -624,31 +789,6 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     font-weight: 400 !important;
     margin-top: 8px !important;
 }
-
-/* Custom scrollbar styling — hidden until hover */
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar {
-    height: 0 !important;
-}
-
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:hover::-webkit-scrollbar,
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:focus-within::-webkit-scrollbar {
-    height: 8px !important;
-}
-
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar-track {
-    background: #E8EDF7 !important;
-    border-radius: 4px !important;
-}
-
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar-thumb {
-    background: #a1cd43 !important;
-    border-radius: 4px !important;
-}
-
-.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar-thumb:hover {
-    background: #3753a4 !important;
-}
-
 
 /* Donate Now — SDHDI social links (replaces share buttons) */
 .elementor-element.elementor-element-c15cd5c .elementor-social-icons-wrapper {
@@ -731,7 +871,9 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
 .elementor-87 .elementor-element.elementor-element-3afd9ee .elementor-button:hover {
     background-color: #3753a4 !important;
     color: #ffffff !important;
-    border-color: #3753a4 !important
+    border-color: #3753a4 !important;
+}
+
 /* "Share Your Thoughts" button - BLUE background with WHITE text */
 .elementor-widget-cmsmasters-button__button {
     background-color: #3753a4 !important;
