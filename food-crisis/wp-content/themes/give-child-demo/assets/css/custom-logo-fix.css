@@ -1,5 +1,14 @@
 /* Custom Logo and Header Fixes */
 
+/* Hide Blog nav until blog content is ready (header + footer) */
+.menu-item-35085 {
+    display: none !important;
+}
+
+.elementor-icon-list-item:has(a[href*="blog-page"]) {
+    display: none !important;
+}
+
 /* Fix logo sizing - make it bigger */
 .elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img {
     width: auto !important;
@@ -557,12 +566,17 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     font-weight: 700 !important;
 }
 
-/* Make the team grid scrollable carousel-style while keeping original design */
+/* Make the team grid scrollable carousel-style; show scrollbar on hover only */
 .elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap {
     overflow-x: auto !important;
     overflow-y: hidden !important;
     scroll-behavior: smooth !important;
     -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:hover,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:focus-within {
     scrollbar-width: thin !important;
     scrollbar-color: #a1cd43 #E8EDF7 !important;
 }
@@ -611,8 +625,13 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
     margin-top: 8px !important;
 }
 
-/* Custom scrollbar styling */
+/* Custom scrollbar styling — hidden until hover */
 .elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar {
+    height: 0 !important;
+}
+
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:hover::-webkit-scrollbar,
+.elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap:focus-within::-webkit-scrollbar {
     height: 8px !important;
 }
 
@@ -628,6 +647,25 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
 
 .elementor-29998 .elementor-element.elementor-element-11b8e37 .cmsmasters-blog__posts-wrap::-webkit-scrollbar-thumb:hover {
     background: #3753a4 !important;
+}
+
+
+/* Donate Now — SDHDI social links (replaces share buttons) */
+.elementor-element.elementor-element-c15cd5c .elementor-social-icons-wrapper {
+    gap: 20px !important;
+}
+
+.elementor-element.elementor-element-c15cd5c .elementor-grid-item {
+    margin-right: 4px !important;
+}
+
+.elementor-element.elementor-element-c15cd5c .elementor-social-icon {
+    background-color: #3753a4 !important;
+    color: #ffffff !important;
+}
+
+.elementor-element.elementor-element-c15cd5c .elementor-social-icon:hover {
+    background-color: #a1cd43 !important;
 }
 
 
