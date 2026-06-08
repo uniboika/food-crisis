@@ -9,6 +9,95 @@
     display: none !important;
 }
 
+/* Broken Give donation form placeholder in mobile offcanvas (section 55) */
+.elementor-element-447ee346,
+#give_error_warning,
+.give_notices.give_errors,
+.cmsmasters-give-wp-widget .give_notices {
+    display: none !important;
+}
+
+/* Home offcanvas — show Take Action submenu when toggled */
+.elementor-150 .elementor-widget-cmsmasters-offcanvas .menu-item-has-children.cmsmasters-active > .sub-menu {
+    display: block !important;
+}
+
+/* Header 87 offcanvas open/close (About Us, campaigns, etc.) */
+.elementor-87 .cmsmasters-offcanvas-content-4155cbe5.elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active,
+.elementor-87 .elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active {
+    left: 0 !important;
+    right: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.elementor-87 .elementor-widget-cmsmasters-offcanvas__container__overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Home offcanvas open/close (header template 150) */
+.elementor-150 .cmsmasters-offcanvas-content-2e988dd6.elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active,
+.elementor-150 .elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active {
+    left: 0 !important;
+    right: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.elementor-150 .elementor-widget-cmsmasters-offcanvas__container__overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Shop header (elementor-104) — brand colors for hamburger + scroll-to-top */
+.elementor-104 .elementor-element-1be1052a .elementor-widget-cmsmasters-offcanvas__trigger {
+    --button-bg-color: #a1cd43 !important;
+    background: #a1cd43 !important;
+}
+
+.elementor-104 .elementor-element-1be1052a .elementor-widget-cmsmasters-offcanvas__trigger:hover,
+.elementor-104 .elementor-element-1be1052a .elementor-widget-cmsmasters-offcanvas__trigger.trigger-active {
+    --button-bg-color: #3753a4 !important;
+    background: #3753a4 !important;
+}
+
+.elementor-104 .elementor-element-55be4dc8.elementor-view-stacked .elementor-icon {
+    background-color: #a1cd43 !important;
+    color: #fff !important;
+}
+
+.elementor-104 .elementor-element-55be4dc8.elementor-view-stacked .elementor-icon svg {
+    fill: #fff !important;
+}
+
+.elementor-104 .elementor-element-55be4dc8.elementor-view-stacked .elementor-icon:hover {
+    background-color: #3753a4 !important;
+    color: #fff !important;
+}
+
+.elementor-104 .elementor-element-55be4dc8.elementor-view-stacked .elementor-icon:hover svg {
+    fill: #fff !important;
+}
+
+/* Shop offcanvas — submenu + open state */
+.elementor-104 .elementor-widget-cmsmasters-offcanvas .menu-item-has-children.cmsmasters-active > .sub-menu {
+    display: block !important;
+}
+
+.elementor-104 .cmsmasters-offcanvas-content-1be1052a.elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active,
+.elementor-104 .elementor-widget-cmsmasters-offcanvas__content.cmsmasters-canvas-position-left.active {
+    left: 0 !important;
+    right: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.elementor-104 .elementor-widget-cmsmasters-offcanvas__container__overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 /* Fix logo sizing - make it bigger */
 .elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img {
     width: auto !important;
@@ -908,31 +997,30 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
 
 
 /* ========================================
-   LOGO SIZE FIX - ALL PAGES 40PX
+   LOGO SIZE - FOOTER ONLY (header stays 100px above)
 ======================================== */
 
-/* Force all logos (header and footer) to be 40px x 40px */
-.elementor-widget-cmsmasters-site-logo__img {
-    width: 40px !important;
-    height: 40px !important;
-    max-width: 40px !important;
-    max-height: 40px !important;
+/* Footer logos — match header logo size */
+.elementor-location-footer .elementor-widget-cmsmasters-site-logo__img,
+.cmsmasters-location-cmsmasters_footer .elementor-widget-cmsmasters-site-logo__img {
+    width: auto !important;
+    height: 100px !important;
+    max-width: none !important;
+    max-height: 100px !important;
 }
 
-/* Campaigns page header logo */
-.elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img {
-    width: 40px !important;
-    height: 40px !important;
-    max-width: 40px !important;
-    max-height: 40px !important;
+.elementor-location-footer .elementor-widget-cmsmasters-site-logo__image-container,
+.cmsmasters-location-cmsmasters_footer .elementor-widget-cmsmasters-site-logo__image-container {
+    max-width: none !important;
 }
 
-/* Footer logos across all pages */
-.elementor-location-footer .elementor-widget-cmsmasters-site-logo__img {
-    width: 40px !important;
-    height: 40px !important;
-    max-width: 40px !important;
-    max-height: 40px !important;
+/* Reinforce header logo size (must come after any global logo rules) */
+.elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img,
+.elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img {
+    width: auto !important;
+    height: 100px !important;
+    max-width: none !important;
+    max-height: 100px !important;
 }
 
 
@@ -1165,4 +1253,99 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
    ======================================== */
 .elementor-31687 .elementor-element.elementor-element-f604343 {
     margin-bottom: 0 !important;
+}
+
+
+/* ========================================
+   MOBILE — header/footer logo size + offcanvas Take Action arrow
+   ======================================== */
+
+/* Take Action submenu toggle (all headers) */
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children.cmsmasters-active > .sub-menu {
+    display: block !important;
+}
+
+/* Fix chevron overlapping "Take Action" text in mobile menu */
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children > a .elementor-widget-cmsmasters-nav-menu__item-text-wrap {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children .elementor-widget-cmsmasters-nav-menu__item-text {
+    flex: 0 1 auto !important;
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children .elementor-widget-cmsmasters-nav-menu__arrow {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    transform: none !important;
+    flex: 0 0 auto !important;
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children .elementor-widget-cmsmasters-nav-menu__arrow .cmsmasters-wrap-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children .elementor-widget-cmsmasters-nav-menu__arrow i {
+    font-size: 14px !important;
+    line-height: 1 !important;
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item-has-children.cmsmasters-active .elementor-widget-cmsmasters-nav-menu__arrow i {
+    transform: rotate(180deg);
+}
+
+.elementor-widget-cmsmasters-offcanvas .menu-item > ul.sub-menu:empty {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    /* Header logos — visible on tablet/mobile without shrinking the header bar */
+    .elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img,
+    .elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img,
+    .elementor-104 .elementor-element.elementor-element-5624fdb2 .elementor-widget-cmsmasters-site-logo__img,
+    .cmsmasters-location-cmsmasters_header .elementor-widget-cmsmasters-site-logo__img {
+        width: auto !important;
+        height: 72px !important;
+        max-width: 140px !important;
+        max-height: 72px !important;
+    }
+
+    .elementor-87 .elementor-element.elementor-element-58bd304a > .elementor-element-populated,
+    .elementor-150 .elementor-element.elementor-element-519eb6b3 > .elementor-element-populated {
+        padding: 8px 12px !important;
+    }
+
+    /* Footer logo — match mobile header size */
+    .elementor-location-footer .elementor-widget-cmsmasters-site-logo__img,
+    .cmsmasters-location-cmsmasters_footer .elementor-widget-cmsmasters-site-logo__img {
+        width: auto !important;
+        height: 72px !important;
+        max-width: 140px !important;
+        max-height: 72px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-87 .elementor-element.elementor-element-6ce47562 .elementor-widget-cmsmasters-site-logo__img,
+    .elementor-150 .elementor-element.elementor-element-167c2356 .elementor-widget-cmsmasters-site-logo__img,
+    .elementor-104 .elementor-element.elementor-element-5624fdb2 .elementor-widget-cmsmasters-site-logo__img,
+    .cmsmasters-location-cmsmasters_header .elementor-widget-cmsmasters-site-logo__img,
+    .elementor-location-footer .elementor-widget-cmsmasters-site-logo__img,
+    .cmsmasters-location-cmsmasters_footer .elementor-widget-cmsmasters-site-logo__img {
+        height: 64px !important;
+        max-height: 64px !important;
+        max-width: 120px !important;
+    }
 }
