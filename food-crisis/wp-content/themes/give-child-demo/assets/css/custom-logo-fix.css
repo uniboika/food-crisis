@@ -1349,3 +1349,61 @@ button[type="submit"]:not(.elementor-150 .elementor-element-eae6697 .elementor-b
         max-width: 120px !important;
     }
 }
+
+
+/* ========================================
+   CAMPAIGNS PAGE — equal-height campaign cards
+   ======================================== */
+
+.elementor-33697 .give-grid--3 {
+    align-items: stretch;
+}
+
+.elementor-33697 .give-grid__item {
+    display: flex;
+    height: auto;
+}
+
+.elementor-33697 .give-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.elementor-33697 .give-form-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.elementor-33697 .give-form-grid-media,
+.elementor-33697 .give-card__media {
+    height: 240px;
+    overflow: hidden;
+}
+
+.elementor-33697 .give-card__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.elementor-33697 .give-form-grid-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.elementor-33697 .give-form-grid-content {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .elementor-33697 .give-form-grid-media,
+    .elementor-33697 .give-card__media {
+        height: 200px;
+    }
+}
