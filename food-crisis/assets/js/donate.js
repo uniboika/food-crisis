@@ -1,9 +1,9 @@
 (function () {
   'use strict';
 
-  var API_BASE = window.DONATE_API_URL || '/api/donations';
-  if (window.location.protocol === 'file:') {
-    API_BASE = 'http://localhost:3003/api/donations';
+  var API_BASE = window.DONATE_API_URL || 'https://server.brainstorm.ng/foodcrisis-backend/api/donations';
+  if (window.location.protocol === 'file:' && !window.DONATE_API_URL) {
+    API_BASE = 'https://server.brainstorm.ng/foodcrisis-backend/api/donations';
   }
 
   var MERCHANT_CODE = window.ISW_MERCHANT_CODE || 'MX250773';
@@ -104,7 +104,6 @@
         '<div class="donate-step-amount">' +
           '<label>Select Amount (NGN)</label>' +
           '<div class="donate-amount-presets">' +
-            '<button data-amount="10">&#8358;10</button>' +
             '<button data-amount="5000">&#8358;5,000</button>' +
             '<button data-amount="10000">&#8358;10,000</button>' +
             '<button data-amount="25000">&#8358;25,000</button>' +
@@ -195,8 +194,8 @@
 
   function submitDonation() {
     var amount = getSelectedAmount();
-    if (!amount || amount <= 0) {
-      alert('Please select a valid donation amount');
+    if (!amount || isNaN(amount) || amount < 100) {
+      alert('Minimum donation amount is ₦100. Please enter or select an amount of ₦100 or more.');
       return;
     }
 
