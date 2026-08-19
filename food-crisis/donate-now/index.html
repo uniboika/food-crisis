@@ -2306,15 +2306,13 @@
 																data-id="9e86d06" data-element_type="widget"
 																data-widget_type="wp-widget-give_forms_widget.default">
 																<div class="elementor-widget-container">
-																	<div class='root-data-givewp-embed'
-																		data-form-locale='en_US'
-																		data-form-url='https://give.cmsmasters.studio/food-crisis/?post_type=give_forms&#038;p=37309'
-																		data-form-view-url='https://give.cmsmasters.studio/food-crisis/?givewp-route=donation-form-view&form-id=37309'
-																		data-src='https://give.cmsmasters.studio/food-crisis/?givewp-route=donation-form-view&form-id=37309'
-																		data-givewp-embed-id='give-form-shortcode-1'
-																		data-form-format='onpage'
-																		data-open-form-button='Continue'
-																		style='--givewp-primary-color: #006450; --givewp-secondary-color: #ed8836;'>
+																	<div style="text-align:center;padding:10px 0">
+																		<button class="donate-btn" onclick="DonateWidget.open('general')">
+																			Donate Now with Interswitch
+																		</button>
+																		<p style="font-size:13px;color:#888;margin-top:10px">
+																			Secured by Interswitch. Cards, Bank Transfer, USSD accepted.
+																		</p>
 																	</div>
 																</div>
 															</div>
@@ -2981,6 +2979,14 @@
 		data-cf-beacon='{"version":"2024.11.0","token":"63307acec0a447f2822bfb8c81dbf267","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
 		crossorigin="anonymous"></script>
 <script defer src="../wp-content/themes/give-child-demo/assets/js/scroll-to-top-fix.js?ver=1.0.0" id="scroll-to-top-fix-js"></script>
+<script>
+window.DONATE_API_URL = '/api/donations';
+window.ISW_MERCHANT_CODE = 'MX182464';
+window.ISW_PAY_ITEM_ID = 'Default_Payable_MX182464';
+window.ISW_WEBPAY_URL = 'https://newwebpay.interswitchng.com/collections/w/pay';
+window.ISW_MODE = 'LIVE';
+</script>
+<script defer src="../assets/js/donate.js"></script>
 </body>
 
 </html>

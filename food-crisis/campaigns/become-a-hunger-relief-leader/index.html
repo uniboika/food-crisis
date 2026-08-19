@@ -2821,18 +2821,16 @@
 																					data-widget_type="wp-widget-give_forms_widget.default">
 																					<div
 																						class="elementor-widget-container">
-																						<div class='root-data-givewp-embed'
-																							data-form-locale='en_US'
-																							data-form-url='https://give.cmsmasters.studio/food-crisis/?post_type=give_forms&#038;p=37315'
-																							data-form-view-url='https://give.cmsmasters.studio/food-crisis/?givewp-route=donation-form-view&form-id=37315'
-																							data-src='https://give.cmsmasters.studio/food-crisis/?givewp-route=donation-form-view&form-id=37315'
-																							data-givewp-embed-id='give-form-shortcode-1'
-																							data-form-format='onpage'
-																							data-open-form-button='Continue'
-																							style='--givewp-primary-color: #006450; --givewp-secondary-color: #ed8836;'>
-																						</div>
-																					</div>
-																				</div>
+																						<div class="elementor-widget-container">
+                        <div style="text-align:center;padding:10px 0">
+                            <button class="donate-btn" onclick="DonateWidget.open('hunger-relief-leader')">
+                                Donate Now with Interswitch
+                            </button>
+                            <p style="font-size:13px;color:#888;margin-top:10px">
+                                Secured by Interswitch. Cards, Bank Transfer, USSD accepted.
+                            </p>
+                        </div>
+                    </div>
 																			</div>
 																		</div>
 																	</div>
@@ -4719,6 +4717,15 @@
 				crossorigin="anonymous"></script>
 <script defer src="../../wp-content/themes/give-child-demo/assets/js/scroll-to-top-fix.js?ver=1.0.0" id="scroll-to-top-fix-js"></script>
 <script defer src="../../wp-content/themes/give-child-demo/assets/js/mobile-offcanvas-fix.js?ver=1.0.4" id="mobile-offcanvas-fix-js"></script>
+
+<script>
+window.DONATE_API_URL = '/api/donations';
+window.ISW_MERCHANT_CODE = 'MX182464';
+window.ISW_PAY_ITEM_ID = 'Default_Payable_MX182464';
+window.ISW_WEBPAY_URL = 'https://newwebpay.interswitchng.com/collections/w/pay';
+window.ISW_MODE = 'LIVE';
+</script>
+<script defer src="../../assets/js/donate.js"></script>
 </body>
 
 <!-- Mirrored from give.cmsmasters.studio/food-crisis/campaigns/become-a-hunger-relief-leader/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Feb 2026 12:16:49 GMT -->
